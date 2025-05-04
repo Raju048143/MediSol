@@ -5,7 +5,7 @@
 <html>
 <head>
 <title>MediSol</title>
-<%@include file="component/abc.jsp"%>
+<%@include file="component/ResourceHeader.jsp"%>
 </head>
 <body>
 	<%
@@ -131,9 +131,8 @@
 				<%	
 					}else{
 					%>
-				<br />
-				<br /> <label class='bg-danger text-white p-2'>Currently Not
-					Available</label>
+				<br /> <br /> <label class='bg-danger text-white p-2'>Currently
+					Not Available</label>
 				<%	
 					}
 					%>
@@ -167,35 +166,6 @@
 		</div>
 	</footer>
 	<a id="btnTop"><i class="fa-solid fa-circle-up fa-2x"></i></a>
-	<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1"
-		aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header bg-info">
-					<h5 class="modal-title text-white" id="exampleModalLabel">Admin
-						Login Form</h5>
-					<button type="button" class="close" data-dismiss="modal"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form action="AdminLogin" method="post">
-						<div class="form-group">
-							<input type="text" name="id" maxlength="100" class="form-control"
-								placeholder="Admin ID" required />
-						</div>
-						<div class="form-group">
-							<input type="password" name="password" maxlength="20"
-								class="form-control" placeholder="Admin Password" required />
-						</div>
-						<button type="submit" class="btn btn-primary">Login</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
 </body>
 <script>
   //AOS

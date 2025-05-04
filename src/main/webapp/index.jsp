@@ -2,8 +2,7 @@
 <html>
 <head>
 <title>MediSol</title>
-<%@include file="component/abc.jsp"%>
-<link rel="stylesheet" href="resources/custom.css">
+<%@include file="component/ResourceHeader.jsp"%>
 </head>
 <body>
 	<%
@@ -140,7 +139,7 @@
 						prioritize your health and convenience, making healthcare more
 						accessible and reliable, especially during challenging times like
 						the COVID-19 pandemic.</p>
-				<!-- 	<button class="btn btn-light" data-toggle="modal" data-target="#my-Modal">Get
+					<!-- 	<button class="btn btn-light" data-toggle="modal" data-target="#my-Modal">Get
 						in touch</button> -->
 				</div>
 			</div>
@@ -184,7 +183,7 @@
 					added safety. Payments can be made online, and your medicines will
 					be delivered securely to your doorstep. Enjoy safe, convenient, and
 					hassle-free service!</p>
-			<!--  	<button class="btn btn-light" data-toggle="modal" data-target="#my-Modal">Get
+				<!--  	<button class="btn btn-light" data-toggle="modal" data-target="#my-Modal">Get
 					in touch</button>-->
 			</div>
 			<div class="col-sm m-2 text-center" data-aos="fade-up"
@@ -279,26 +278,31 @@
 		</div>
 	</footer>
 	<a id="btnTop"><i class="fa-solid fa-circle-up fa-2x"></i></a>
-	  <!-- Modal Get In Touch! -->
-  <div class="modal fade" id="my-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Get In Touch!</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            <form method="post" action="AddEnquiry">
-                <input name="name" class="form-control p-4 my-2" type="text" maxlength="20" pattern="[a-zA-Z ]+" placeholder="Your Name" required />
-                <input name="phone" class="form-control p-4 my-2" type="tel" maxlength="10" minlength="10" pattern="[0-9]+" placeholder="Your Phone" required />
-                <button class="btn btn-success my-2">Submit</button>
-            </form>
-        </div>
-      </div>
-    </div>
-  </div>
+	<!-- Modal Get In Touch! -->
+	<div class="modal fade" id="my-Modal" tabindex="-1"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Get In Touch!</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form method="post" action="AddEnquiry">
+						<input name="name" class="form-control p-4 my-2" type="text"
+							maxlength="20" pattern="[a-zA-Z ]+" placeholder="Your Name"
+							required /> <input name="phone" class="form-control p-4 my-2"
+							type="tel" maxlength="10" minlength="10" pattern="[0-9]+"
+							placeholder="Your Phone" required />
+						<button class="btn btn-success my-2">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1"
 		aria-labelledby="exampleModalLabel" aria-hidden="true">
