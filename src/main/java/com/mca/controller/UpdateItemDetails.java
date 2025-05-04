@@ -16,7 +16,7 @@ import javax.servlet.http.Part;
 import com.raju.dao.DAO;
 
 /**
- * Servlet implementation class AdminLogin
+ * Servlet implementation class UpdateItemDetails
  */
 @WebServlet("/UpdateItemDetails")
 public class UpdateItemDetails extends HttpServlet {

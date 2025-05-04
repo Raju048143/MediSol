@@ -16,7 +16,7 @@ import javax.servlet.http.Part;
 import com.raju.dao.DAO;
 
 /**
- * Servlet implementation class AdminLogin
+ * Servlet implementation class RemoveFromCartByAdmin
  */
 @WebServlet("/RemoveFromCartByAdmin")
 public class RemoveFromCartByAdmin extends HttpServlet {

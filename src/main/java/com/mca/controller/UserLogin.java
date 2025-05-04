@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 import com.raju.dao.DAO;
 
 /**
- * Servlet implementation class AdminLogin
+ * Servlet implementation class UserLogin
  */
 @WebServlet("/UserLogin")
 public class UserLogin extends HttpServlet {

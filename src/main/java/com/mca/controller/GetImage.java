@@ -20,9 +20,12 @@ import javax.servlet.http.Part;
 
 import com.raju.dao.DAO;
 
+/**
+ * Servlet implementation class GetImage
+ */
 @WebServlet("/GetImage")
 public class GetImage extends HttpServlet {
-
+	private static final long serialVersionUID = 1L;
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
 			String name=request.getParameter("name");
